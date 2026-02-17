@@ -15,17 +15,27 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.05);
             text-align: center;
             transition: 0.4s;
+            color: #333;
         }
 
+        /* Dark Mode Support */
         body.dark-mode .contact-section {
             background: #1e1e1e;
             color: #f1f1f1;
+        }
+
+        body.dark-mode .contact-section a {
+            color: #9a8cff;
         }
 
         .contact-section h2 {
             font-size: 32px;
             margin-bottom: 20px;
             color: #6c63ff;
+        }
+
+        body.dark-mode .contact-section h2 {
+            color: #9a8cff;
         }
 
         .contact-section p {
@@ -62,11 +72,30 @@
 
         footer {
             margin-top: 50px;
+            padding: 20px 0;
+            text-align: center;
+            background: #f0f2ff;
+            color: #555;
+            transition: 0.4s;
+        }
+
+        body.dark-mode footer {
+            background: #1a1a1a;
+            color: #ddd;
+        }
+
+        body.dark-mode footer a {
+            color: #9a8cff;
+        }
+
+        body.dark-mode footer a:hover {
+            color: #ff8fa3;
         }
     </style>
 </head>
 <body>
 
+<!-- Contact Section -->
 <div class="contact-section">
     <h2>Contact Me</h2>
     <p>Email: <a href="mailto:vinodeva003@gmail.com">vinodeva003@gmail.com</a></p>
@@ -74,8 +103,13 @@
     <a href="index.html" class="btn">Back to Home</a>
 </div>
 
+<!-- Footer -->
 <footer>
     <p>© 2026 Vinodhini Devaraj</p>
+    <p>
+        <a href="contact.html">Contact</a> |
+        <a href="https://www.linkedin.com/in/vinodhini-devaraj3/" target="_blank">LinkedIn</a>
+    </p>
 </footer>
 
 <script src="script.js"></script>
